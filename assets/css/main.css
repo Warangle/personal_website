@@ -2383,7 +2383,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 960px) {
+	/*@media screen and (max-width: 10000px) {*/
 
 		/* Basic */
 
@@ -2574,7 +2574,7 @@ input, select, textarea {
 					padding: 4em 0;
 				}
 
-	}
+	/*}*/
 
 /* Mobile */
 
