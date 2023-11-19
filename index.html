@@ -61,62 +61,7 @@
 				<!-- Intro -->
 				<style>
 					/* Style for the video container */
-					#video-container {
-						position: relative;
-						width: 100%;
-						height: 100vh;
-						overflow: hidden;
-					}
-			
-					/* Make the video fill the container */
-					video {
-						width: 100%;
-						height: 100%;
-						filter: brightness(50%);
-						object-fit: cover;
-						pointer-events: none; /* Disable pointer events on the video */
-					}
-			
-					/* Style for the container with text and image */
-					#text-image-container {
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						text-align: center;
-					}
-			
-					/* Style for the circular photo */
-					#circular-photo {
-						display: inline-block;
-						border-radius: 50%;
-						width: 100px;
-						height: 100px;
-						overflow: hidden;
-					}
 
-					/* Style for the image inside the circular photo */
-					#circular-photo img {
-						width: 100%; /* Make the image fill the circular container */
-						height: 100%; /* Make the image fill the circular container */
-						object-fit: cover; /* Maintain aspect ratio and cover the container */
-					}
-					
-					#video-header {
-						color: white;
-						font-size: 45px;
-						margin-top: 10px; /* Adjust the margin as needed */
-					}
-
-					/* Style for the text overlay */
-					#text-overlay {
-						color: rgb(218, 218, 218);
-						font-size: 24px;
-						margin-top: 10px; /* Adjust the margin as needed */
-					}
-					#work-button {
-						margin-top: 30px; /* Adjust the margin as needed */
-					}
 				</style>
 				<div id="video-container">
 					<video loop muted autoplay poster>
@@ -153,45 +98,31 @@
 							fusce hendrerit lacus ridiculus.</p>
 
 							<div class="row">
-								<div class="col-4 col-12-mobile">
+								<div class="col-2 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image fit"></a>
+											<div id="text-overlaying-blur" class="hidden">Lorem ipsum dolor sit amet</div><img id="blurred-image" src="images/pic02.jpg" alt=""  onmouseenter="onMouseEnterBlur(event)" onmouseleave="onMouseLeaveBlur(event)"/>
 										<header>
 											<h3>Ipsum Feugiat</h3>
 										</header>
 									</article>
+								</div>
+								<div class="col-2 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image fit"></a>
+											<div id="text-overlaying-blur" class="hidden">Lorem ipsum dolor sit amet</div>
+											<img id="blurred-image" src="images/pic03.jpg" alt=""  onmouseenter="onMouseEnterBlur(event)" onmouseleave="onMouseLeaveBlur(event)"/>
 										<header>
-											<h3>Rhoncus Semper</h3>
+											<h3>Ipsum Feugiat</h3>
 										</header>
 									</article>
 								</div>
-								<div class="col-4 col-12-mobile">
+								<div class="col-2 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="#" class="image fit"></a>
+											<div id="text-overlaying-blur" class="hidden">Lorem ipsum dolor sit amet</div><img id="blurred-image" src="images/pic04.jpg" alt=""  onmouseenter="onMouseEnterBlur(event)" onmouseleave="onMouseLeaveBlur(event)"/>
 										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
+											<h3>Ipsum Feugiat</h3>
 										</header>
 									</article>
 								</div>
@@ -262,6 +193,7 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/mouseenterblur.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
